@@ -263,6 +263,12 @@
   width: 100px;
   background-color: #000000 !important;
 }
+.banner-opacity{
+  background: rgba(0, 0, 0, 0.582);
+  height: inherit;
+  width: inherit;
+  
+}
 .banner-item {
   z-index: -1;
   position: relative;
