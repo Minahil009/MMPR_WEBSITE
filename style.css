@@ -265,10 +265,12 @@
 }
 .banner-opacity{
   background: rgba(0, 0, 0, 0.582);
-  height: inherit;
-  width: inherit;
+  height: 100%;
+  position: absolute;
+  width: 100%;
   
 }
+
 .banner-item {
   z-index: -1;
   position: relative;
@@ -305,10 +307,12 @@
   color: black !important;
 }
 .banner-img {
+  position: absolute;
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
+
 .banner-img img {
   width: 100%;
   height: 100%;
@@ -491,7 +495,6 @@ transform: scale(1);
   font-weight: 600;
   font-size: 2.5rem;
   font-weight: 800;
-  text-transform: uppercase;
 }
 
 .banner-2 .banner-title-2 {
@@ -718,7 +721,6 @@ transform: scale(1);
   margin-top: 20px;
   overflow: hidden;
   text-overflow: ellipsis;
-  text-transform: capitalize;
   white-space: nowrap;
 }
 .blog-title-2 > a {
@@ -1789,7 +1791,11 @@ table {width: 100%}
 .contact-address {
   padding: 40px 20px 30px;
   text-align: center;
-  min-height: 230px;
+  min-height: 100%;
+  width: 100%;
+}
+.contact-address h6{
+  font-size: 25px;
 }
 .contact-address i {
   border-radius: 50%;
@@ -1809,6 +1815,9 @@ table {width: 100%}
 }
 .contact-address h6 {
   color: #666;
+}
+span.timing{
+  color: #fb6128;
 }
 /* -------------------------------------
     14.2 Google Map
@@ -2000,6 +2009,46 @@ table {width: 100%}
   line-height: 2;
   color: white;
   text-align: left;
+}
+.warranty #loading {
+  -webkit-animation: rotation 9s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(359deg);
+  }
+}
+.warranty h2{
+  white-space: nowrap;
+	overflow: hidden;
+	width: 100%;
+	animation: type 5s steps(60, end); 
+  }
+  
+  .warranty h2:nth-child(2){
+	animation: type2 6s steps(60, end);
+  }
+  
+  
+  @keyframes type{ 
+	from { width: 0; } 
+  } 
+  
+  @keyframes type2{
+	0%{width: 0;}
+	50%{width: 0;}
+	100%{ width: 100; } 
+  } 
+  
+  ::selection{
+	background: black;
+  }
+.warranty h2.heading-2 {
+  margin-top: 25px;
 }
 /* 20. header banner */
 
