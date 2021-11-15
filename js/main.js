@@ -1,13 +1,4 @@
-/*
 
-  Template Name: Subas Ecommerce Responsive Bootstrap Template
-  Description: This is html5 template
-  Author: codecarnival
-  Version: 1.0
-  Design and Developed by: codecarnival
-  NOTE: If you have any note put here. 
-
-*/
 /*================================================
 [  Table of contents  ]
 ================================================

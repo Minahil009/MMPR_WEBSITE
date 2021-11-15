@@ -1,15 +1,4 @@
 
-/*
-    Template Name: Your template name 
-    Template URI: http://bootexperts.com
-    Author: BootExperts
-    Author URI: http://bootexperts.com
-
-    NOTE:  This is js file contents all jQuery plugins.
-
-*/
-
-
 /*================================================
 [  Table of contents  ]
 ================================================
