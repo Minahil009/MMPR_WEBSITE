@@ -2061,7 +2061,7 @@ span.timing{
 	padding-top: 60px;
   font-family: "Nunito";
 	padding-bottom: 100px;
-  background: url(/img/slider/slider-2/background.jpg);
+  background: url(img/slider/slider-2/background.jpg);
 }
 .hero-section .hero-text .container {
 	position: relative;
@@ -2090,7 +2090,7 @@ span.timing{
 }
 
 .booking-form {
-    background: url(/img/header/apple-iphone-12-pro.png);
+    background: url(img/header/apple-iphone-12-pro.png);
     border-radius: 4px;
     background-repeat: no-repeat;
     background-position: center;
