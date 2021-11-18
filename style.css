@@ -2097,7 +2097,7 @@ span.timing{
 /* carousel slider */
 .carousel-background{
   position: relative;
-  background: url(/img/header/IPAD.png);
+  background: url(img/header/IPAD.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
