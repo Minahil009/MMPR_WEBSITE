@@ -2070,7 +2070,7 @@ span.timing{
 	z-index: 5;
 }
 .hero-section .hero-text h1 {
-	padding-top: 20px;
+	padding-top: 0px;
   font-size: 6rem;
   font-weight: bold;
   color: #fb6128;
@@ -2080,12 +2080,13 @@ span.timing{
 .hero-section .hero-text h2{
   font-size: 4.5rem;
   font-weight: 700;
-  color: white;
+  color: gray;
   margin-bottom: 16px;
   margin-top: 0;
+  
 }
 .hero-section .hero-text p{
-  color: white !important;
+  color: gray !important;
   font-size: 3rem;
 }
 .hero-section .hero-text .fa-check{
@@ -2093,6 +2094,52 @@ span.timing{
   line-height: 1.5;
 }
 
+/* carousel slider */
+.carousel-background{
+  position: relative;
+  background: url(/img/header/IPAD.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 700px;
+  
+}
+.carousel {
+  width: 100%;
+  height: 100%;
+  padding: 70px;
+}
+
+/* .carousel-inner .item-1{
+  background-color: #fb6128;
+
+}
+.carousel-inner .item-2{
+  background-color: #b95936;
+  
+}
+.carousel-inner .item-3{
+  background-color: #80584a;
+  
+} */
+.tab-bottom-bar{
+  position: absolute;
+  bottom: 40px;
+  z-index: 1;
+  background: rgb(0 0 0 / 25%)00;
+  border-radius:  5px;
+  text-align: center;
+  width: 80%;
+  height: 50px;
+  padding: 10px;
+  
+}
+
+.tab-bottom-bar i{
+  font-size: 35px;
+  color: #fb6128;
+  margin-right: 30px;
+}
 .booking-form {
     background: url(img/header/apple-iphone-12-pro.png);
     border-radius: 4px;
@@ -2112,7 +2159,6 @@ span.timing{
 }
 .booking-form h3 {
 	color: #2e2e2e;
-	margin: 1.5rem;
   font-size: 2rem;
   font-weight: 800;
   text-align: left;
