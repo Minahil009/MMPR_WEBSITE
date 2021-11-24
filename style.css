@@ -1970,6 +1970,52 @@ span.timing{
   color: white;
   margin-top: 2rem;
 }
+.tips .modal{
+  margin-top: 10%;
+  width: 100%;
+  color: #222222 !important;
+}
+.tips .modal p{
+  margin-top: 10%;
+  color: #222 !important;
+}
+/* tooltip */
+.tips .icon {
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+  .tips span {
+    position: absolute;
+    top: 40%;
+    margin-left: 10px;
+    padding: .3rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    white-space: nowrap;
+    color: #000;
+    border-radius: 5px;
+    background-color: rgb(255 255 255 / 82%);
+    box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1),
+      0 5px 15px rgba(0, 0, 0, 0.07);
+
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+  }
+  .tips .icon:hover span{
+      opacity: 0.9;
+    
+  
+
+}
 
 .tips .process .repair-icon{
   font-size: 5rem;
@@ -1978,6 +2024,9 @@ span.timing{
   border: 4px solid #fb6028a8;
   width: 100px;
   padding: 2rem;
+  display: block;
+  text-align: center;
+  margin: auto;
   color: #fb6128;
   border-radius: 50%;
   margin-top: 2rem;
@@ -2101,7 +2150,9 @@ span.timing{
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  width: 700px;
+  padding: 50px;
+  width: 100%;
+  top: -30px;
   
 }
 .carousel {
@@ -2126,7 +2177,7 @@ span.timing{
   position: absolute;
   bottom: 40px;
   z-index: 1;
-  background: rgb(0 0 0 / 25%)00;
+  background: rgb(67 67 67 / 25%)00;
   border-radius:  5px;
   text-align: center;
   width: 80%;
@@ -2134,11 +2185,15 @@ span.timing{
   padding: 10px;
   
 }
-
 .tab-bottom-bar i{
   font-size: 35px;
+  color: #3d3d3d;
+  margin-right: 50px;
+  transition: transform .3s;
+}
+.tab-bottom-bar i:hover{
+  transform: scale(1.2);
   color: #fb6128;
-  margin-right: 30px;
 }
 .booking-form {
     background: url(img/header/apple-iphone-12-pro.png);
@@ -2381,3 +2436,6 @@ span.timing{
   border: 1px solid #fb6128;
   color: #fb6128;
 }
+
+
+

@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elastic SVG Modal Window Demo</title>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+<style>
+body {
+  background-color: #FFF3F7;
+  font-size: 16px;
+  font-family: helvetica;
+}
+
+a {
+  color: #2e2e2e;
+  text-decoration: none;
+  display: block;
+  padding: 4px 8px;
+  transition: color .25s ease-out;
+}
+
+a:hover, a:focus { color: #FFF; }
+
+.icon {
+  text-align: center;
+  z-index: 10;
+  left: 48%;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+}
+
+.svg-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.svg-wrapper svg {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+path {
+  fill: #2e2e2e;
+  stroke: #2e2e2e;
+  stroke-width: 1px;
+}
+
+.modal {
+  position: relative;
+  margin: 0 auto;
+  width: 0px;
+  height: 15px;
+  -webkit-transition: height 0.6s, width 0.6s;
+  transition: height 0.6s, width 0.6s;
+}
+
+.modal-close {
+  display: none;
+  position: absolute;
+  text-transform: uppercase;
+  top: 65px;
+  right: 85px;
+  color: white;
+  z-index: 10;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid transparent;
+}
+pd{
+    display: none;
+  text-transform: uppercase;
+  top:80px;
+  left: 50px;
+  color: white;
+  z-index: 10;
+  width: max-content;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid transparent;
+}
+article{
+    display: none;
+  position: absolute;
+  text-transform: uppercase;
+  top:80px;
+  left: 50px;
+  color: white;
+  width: max-content;
+  z-index: 10;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid transparent;
+}
+
+.modal-active article{
+    display: block;
+    width: inherit;
+}
+
+.modal-close:hover, .modal-close:focus { border-bottom-color: white; }
+
+.modal-active .modal {
+  width: 60%;
+  height: 400px;
+}
+@media (max-width:992px) {
+    .modal-active .modal {
+  width: 90%;
+  height: 400px;
+}
+    
+}
+.modal-active .icon { display: none; }
+
+.modal-active .modal-close { display: block; }
+.modal-active p { display: block; }
+</style>
+</head>
+
+<body>
+
+
+<a href="#" class="icon icon-show-overlay"><i class="fas fa-info-circle"></i></i></a>
+<div id="modal" class="modal">
+  <button id="modal-close" class="modal-close">Close</button>
+  <div class="model-body" style="position: absolute;">
+      <article>
+        <h1>Van Details</h1>
+        <p>Choose our store pickup option and have your phone picked up and delivered to your doorstep hassle-free! Check out how here.</p>
+      </article>
+  </div>
+  <div id="svg-wrapper" class="svg-wrapper" data-icon-hovered="M1220.267,723.2c0,0-293.547,0-580.267,0c-333.653,0-584.533,0-584.533,0s0-104.783,0-334.854
+  c0-188.981,0-334.846,0-334.846s251.733,0,584.533,0c362.667,0,580.267,0,580.267,0s0,116.7,0,344.803
+  C1220.267,613.127,1220.267,723.2,1220.267,723.2L1220.267,723.2" data-modal-open="M1220.267,723.2c0,0-292.456-47.624-579.176-47.624c-333.653,0-585.624,47.624-585.624,47.624
+  s83.149-104.783,83.149-334.854c0-188.981-83.149-334.846-83.149-334.846s251.324,49.105,584.124,49.105
+  c362.667,0,580.676-49.105,580.676-49.105s-72.201,123.987-72.201,352.09C1148.065,620.414,1220.267,723.2,1220.267,723.2
+  L1220.267,723.2"> <svg id="svg" width="100%" height="100%" viewBox="0 0 1280 800"  preserveAspectRatio="none">
+    <path id="svg-path" d="M1220.267,723.2c0,0-293.547,0-580.267,0c-333.653,0-584.533,0-584.533,0s0-3.505,0-11.2
+  c0-6.321,0-11.2,0-11.2s251.733,0,584.533,0c362.667,0,580.267,0,580.267,0s0,3.903,0,11.533
+  C1220.267,719.519,1220.267,723.2,1220.267,723.2L1220.267,723.2" />
+    </svg> 
+
+
+</div>
+</div>
+
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script> 
+<script src="/model.js"></script>
+</body>
+</html>
