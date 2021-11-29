@@ -76,6 +76,13 @@
 *{
   font-family: 'Nunito', sans-serif;
 }
+body{
+  -webkit-user-select: none;
+        -webkit-touch-callout: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+}
 
 
 /*************************************
@@ -1975,9 +1982,24 @@ span.timing{
   width: 100%;
   color: #222222 !important;
 }
+.tips .modal a{
+  color: #fb6128;
+}
+.tips .modal-body{
+  background: #eeeeee;
+}
+.tips .modal .modal-title{
+  color: #fb6128;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
 .tips .modal p{
-  margin-top: 10%;
-  color: #222 !important;
+  margin: 0;
+  color: #676767  !important;
+  font-weight: 600;
+}
+.tips .modal img{
+  width: 200px;
 }
 /* tooltip */
 .tips .icon {
@@ -1987,6 +2009,7 @@ span.timing{
   align-items: center;
   cursor: pointer;
 }
+
 
   .tips span {
     position: absolute;
@@ -2182,7 +2205,7 @@ span.timing{
   text-align: center;
   width: 80%;
   height: 50px;
-  padding: 10px;
+  padding: 5px;
   
 }
 .tab-bottom-bar i{
