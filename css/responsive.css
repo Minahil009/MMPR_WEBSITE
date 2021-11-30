@@ -8,6 +8,9 @@
   padding-left: 45px;
   padding-right: 45px;
 }
+.booking-form .form {
+  padding: 40px 65px;
+}
 /*mega-menu*/
 .mega-menu-area {
  /* right: -190px;*/
@@ -72,6 +75,9 @@
 .plr-200 {
   padding-left: 0;
   padding-right: 0;
+}
+.booking-form .form {
+  padding: 50px 65px;
 }
 /*slick-arrow*/
 .slick-arrow-2 .slick-arrow {
@@ -266,6 +272,9 @@
 .plr-200 {
   padding-left: 0;
   padding-right: 0;
+}
+.booking-form .form {
+  padding: 50px 65px;
 }
 /*slick-arrow*/
 .slick-arrow-2 .slick-arrow {
