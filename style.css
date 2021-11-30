@@ -2233,14 +2233,14 @@ span.timing{
   
 }
 .booking-form .form {
-  padding: 40px 60px;
+  padding: 40px 30px;
 }
 .booking-form h3 {
 	color: #2e2e2e;
   font-size: 2rem;
   font-weight: 800;
   text-align: left;
-}
+} 
 .booking-form .get-quote-button{
   background: #fb6128;
   padding: 1rem;
@@ -2402,7 +2402,7 @@ span.timing{
 	bottom: 17px;
 }
 .booking-form form .select-option {
-	margin-bottom: 15px;
+	margin-bottom: 5px;
 }
 .booking-form form .select-option label {
 	font-size: 2rem;
