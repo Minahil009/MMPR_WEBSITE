@@ -2336,13 +2336,21 @@ span.timing{
     transition: all .4s ease-in-out;
     
     opacity: 0;
-    visibility: hidden;
+    /*umer imran*/
+    /*visibility: hidden;*/
+    display: none;
+
+
     pointer-events: none;
     transform: translateY(-15px);
   }
   .booking-select.opened .booking-options {
     opacity: 1;
-    visibility: visible;
+    /*umer imran*/
+    /*visibility: visible;*/
+    display: unset;
+
+    
     height: 100px;
     overflow-y: scroll;
     pointer-events: all;
