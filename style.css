@@ -1676,8 +1676,10 @@ table {width: 100%}
   color: #575757;
   font-size: 30px;
   font-weight: 700;
-  line-height: 14px;
   text-transform: uppercase;
+}
+.blog-section-title h2{
+  line-height: 0px !important;
 }
 .author-post {
   padding: 20px;
@@ -2198,7 +2200,7 @@ span.timing{
 } */
 .tab-bottom-bar{
   position: absolute;
-  bottom: 40px;
+  bottom: 10px;
   z-index: 1;
   background: rgb(67 67 67 / 25%)00;
   border-radius:  5px;
